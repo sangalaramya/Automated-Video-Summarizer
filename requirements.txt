@@ -1,6 +1,8 @@
 streamlit
 moviepy==1.0.3
 openai-whisper
+transformers
+sentencepiece
 sumy
 nltk
 torch
