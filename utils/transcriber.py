@@ -1,13 +1,20 @@
-import whisper
+from faster_whisper import WhisperModel
 
 
 def transcribe_audio(audio_path):
     """
-    Transcribes the audio using OpenAI Whisper.
+    Transcribes audio using Faster Whisper.
     """
 
-    model = whisper.load_model("base")
+    # Load the model
+    model = WhisperModel("base", device="cpu", compute_type="int8")
 
-    result = model.transcribe(audio_path)
+    # Transcribe
+    segments, info = model.transcribe(audio_path)
 
-    return result["text"]
+    # Combine all text
+    transcript = ""
+    for segment in segments:
+        transcript += segment.text + " "
+
+    return transcript.strip()

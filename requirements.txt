@@ -1,9 +1,7 @@
 streamlit
 moviepy==1.0.3
-openai-whisper
+faster-whisper
 transformers
 sentencepiece
-sumy
-nltk
 torch
 ffmpeg-python
