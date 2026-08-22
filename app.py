@@ -18,7 +18,10 @@ st.title("🎥 Automated Video Summarizer")
 st.write("Upload a video and get AI-generated summaries and chapters.")
 
 st.info(
-Note: For optimal results, please upload videos featuring clear English speech with minimal ambient noise and no background music. Enhancements for background-music handling and support for longer-duration videos are currently in development and will be introduced in upcoming updates.
+    "**Note:** For optimal results, please upload videos featuring clear English "
+    "speech with minimal ambient noise and no background music. **Enhancements for "
+    "background-music handling and support for longer-duration videos are currently "
+    "in development and will be introduced in upcoming updates.**"
 )
 
 ensure_directories()
