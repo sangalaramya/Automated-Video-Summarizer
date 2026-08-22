@@ -1,6 +1,6 @@
 streamlit
 moviepy==1.0.3
 faster-whisper
-transformers
+transformers==4.57.0
 torch
 ffmpeg-python
